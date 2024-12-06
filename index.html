@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixeLap</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/first-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!--here is the navbar-->
+    <header id="hom" class="header">
+        <div class="logo">
+            <h3 id="logo">PixeLap</h3>
+            
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a title="inicio de pagina" href="#hom">Home</a></li>
+                <li><a title="apartado de proyectos" href="#pro">Projects</a></li>
+                <li><a title="informacion sobre mi" href="#abo">About</a></li>
+           </ul>            
+        </nav>
+        <a title="boton de contacto" class="btn" href="#cont"><button>Contact</button></a>
+
+        <!--para mobiles-->
+        <a onclick="openNav()" class="menu" href="#"><button><i class="bi bi-list"></i></button></a>
+
+<!---->        <div id="mobile-menu" class="overlay">
+<!---->            <a onclick="closeNav()" href="" class="close">&times;</a>
+<!---->            <div class="overlay-content">
+<!---->                <a title="inicio de pagina" href="#hom">Home</a>
+<!---->                <a title="apartado de proyectos" href="#pro">Projects</a>
+<!---->                <a title="informacion sobre mi" href="#abo">About</a>
+<!---->                <a title="contacto" href="#cont">Contact</a>
+<!---->            </div>
+<!---->        </div>
+    </header>
+    <!--here ends the navbar-->
+
+    <!--here start the home-->
+    <section class="carusel-section">
+        <article class="carusel-section-cards container">
+            <div class="section__card show">
+                <div class="section__card-content">
+                    <h1 class="section__card-title">Bienvenido a PixeLap</h1>
+                    <p class="section__card-text">En Pixelab, te ofrezco servicios de edición de fotografías de alta calidad, personalizados y a precios competitivos. No dudes en explorar mi sitio web y descubrir cómo puedo ayudarte a hacer que tus fotos sean verdaderas obras de arte.
+                    </p>
+                </div>
+                <!--imgs-->
+                <div class="section__card-imgs">
+                    <div class="section__card-img">
+                        <img src="img/img2.jpg" alt="imagen del home, mujer ocandose la cara">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section__card">
+                <div class="section__card-content">
+                    <h1 class="section__card-title"> La Mejor Opción para tus Fotos</h1>
+                    <p class="section__card-text">Transforma tus fotos en obras maestras con Pixelab. Edición fotográfica de alta calidad y personalizada para capturar tus momentos más especiales.
+                    </p>
+                </div>
+                <!--imgs-->
+                <div class="section__card-imgs">
+                    <div class="section__card-img">
+                        <img src="img/img7.jpg" alt="imagen 2 del home es una mujer.">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section__card">
+                <div class="section__card-content">
+                    <h1 class="section__card-title">La Edición Fotográfica como Arte</h1>
+                    <p class="section__card-text">¿Buscas un profesional que pueda editar tus fotos de manera que reflejen tus expectativas? En Pixelab, nos comprometemos a ofrecerte servicios de edición fotográfica de alta calidad, con atención al detalle y un enfoque personalizado.
+                    </p>
+                </div>
+                <!--imgs-->
+                <div class="section__card-imgs">
+                    <div class="section__card-img">
+                        <img src="img/img6.jpg" alt="imagen 3 del home, una mujer rodeada de hojass">
+                    </div>
+                </div>
+
+            </div>
+            <!--controls-->
+            <div class="carusel-control">
+                <a title="boton para cambiar a la izquierda" href="#" class="carusel__control prev"><i class="bi bi-caret-left"></i></a>
+                <a title="boton para cambiar a la derecha" href="#" class="carusel__control next"><i class="bi bi-caret-right"></i></a>
+            </div>
+
+        </article>
+
+    </section>
+
+    <!--images-->
+    <h5 title="apartado de proyectos" id="pro">Projects</h5>
+
+    <div class="imgs-home">
+        <img src="img/img1.jpg" alt="imagen de proyectos 1">
+        <img src="img/img2.jpg" alt="imagen de proyectos 2">
+        <img src="img/img3.jpg" alt="imagen dde proyectos 3">
+        <img src="img/img4.jpg" alt="imagen de proyectos 4">
+        <img src="img/img5.jpg" alt="imagen de proyectos 5">
+        <img src="img/img6.jpg" alt="imagen de proyectos 6">
+        <img src="img/img7.jpg" alt="imagen de proyectos 7">
+    </div>
+
+    <!--skills and about me-->
+    <section class="services-section">
+        <article class="services__cards container2">
+            <div class="services__cards-info">
+                <h2>Our Services</h2>
+                <p>
+                    Edición de fotos de alta calidad
+                    Retoque fotográfico y eliminación de imperfecciones
+                    Mejora de iluminación y color
+                    Edición de fotos para eventos, retratos y más
+
+
+                </p>
+            </div>
+            <div class="services__cards-card">
+                <div class="service__card">
+                    <i class="bi bi-person-circle"></i>
+                    <h3 id="abo">About Me</h3>
+                    <p>
+                        Soy un desarrollador web full-stack con habilidades en HTML, CSS, JavaScript, Python y C++. Con una gran pasión por la tecnología y la creatividad, me dedico a desarrollar soluciones web innovadoras y efectivas. En esta página, me enfoco en la edición de fotos, utilizando mis habilidades técnicas para transformar tus fotos en obras de arte únicas.
+                    </p>
+                </div>
+                <div class="service__card">
+                    <i class="bi bi-wallet-fill"></i>
+                    <h3 title="apartado de contactame" id="cont" class="service__card-h3">Contact Me</h3>
+                    <a title="boton para instagram" href="https://www.instagram.com/akira_soull/" target="_blank">Instagram</a>
+                    <a title="boton para whatsapp" href="https://wa.link/4tjzb4" target="_blank">Whatsapp</a>
+                    <a title="boton para mi correo" href="mailto:andyz1238@gmail.com?" target="_blank">Email</a>
+                </div>
+
+                <div class="service__card">
+                    <i class="bi bi-braces"></i>
+                    <h3 title="apartado de skills" class="service__card-h3">Skills</h3>
+                    <a title="python" href="https://www.python.org/">Python</a>
+                    <a title="c++" href="https://es.wikipedia.org/wiki/C%2B%2B">C++</a>
+                    <a title="Html" href="https://developer.mozilla.org/es/docs/Web/HTML">Html</a>
+                    <a title="css" href="https://developer.mozilla.org/es/docs/Web/CSS">Css</a>
+                    <a title="JavaScript" href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a>
+                    <a title="MYSQL" href="https://es.wikipedia.org/wiki/SQL">MySQL</a>
+                    <a title="adobe photoshop" href="https://www.adobe.com/ec/products/photoshop.html">Photoshop</a>
+                </div>
+
+                
+            </div>
+        </article>
+    </section>
+    
+
+
+    <!--page end-->
+
+    <footer class="footer">
+        <ul class="social-icon">
+          <li class="icon-elem">
+          </li>
+          <li class="icon-elem">
+            <a title="icon de instagram" href="https://www.instagram.com/akira_soull/" class="icon">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a title="icon de whatsapp" target="_blank" href="https://wa.link/4tjzb4" class="icon">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a title="icon de facebook" target="_blank" href="https://www.facebook.com/Akirasoull/?locale=es_LA" class="icon">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="icon-elem">
+            <a title="icon de mail" target="_blank" href="mailto:andyz1238@gmail.com?" class="icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+          
+        </ul>
+        <ul class="menu2">
+          <li class="menu-elem">
+            <a title="apartado del final de la pagina (home)" href="#hom" class="menu-icon"> Home </a>
+          </li>
+          <li class="menu-elem">
+            <a title="apartado del final de la pagina (contact)" href="#cont" class="menu-icon"> Contact </a>
+          </li>
+          <li class="menu-elem">
+            <a title="apartado del finall de la pagina (sobre mi)" href="#abo" class="menu-icon"> About Me </a>
+          </li>
+        </ul>
+        <p class="text">@2024 | Made by Andy Mendoza</p>
+      </footer>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+
+    <script type="text/javascript" src="js/nav.js"></script>
+</body>
+</html>
