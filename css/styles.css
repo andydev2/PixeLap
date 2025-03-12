@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #ececec;
+    background: -webkit-linear-gradient(90deg, #fecdea,#d7dffe);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #fecdea,#d7dffe);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
 }
 
 
@@ -29,8 +29,9 @@ body {
 }
 
 /*here start the navbarcss*/
+
 .header{
-    background-color: #e7e7e7;
+    background: transparent;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -49,12 +50,12 @@ body {
     width: auto;
     transition: all 0.3s;
     border-radius: 50%;
-    color: #494949;
+    color: #7482ec;
 }
 
 .header .logo h3:hover{
     transform: scale(1.2);
-    color: #0007;
+    color: #d1d1d1;
 }
 
 .header .nav-links{
@@ -71,19 +72,24 @@ body {
 }
 
 .header .nav-links a{
+    font-weight: 700;
     font-size: 700;
-    color: #494949;
+    color: #7482ec;
     text-decoration: none;    
 }
 
 .header .nav-links li a:hover{
-    color: white;
+    color: #d1d1d1;
+    transition: 0.3s;
+    transform: scale(1.1);
+    
 }
+
 .header .menu button{
     background: transparent;
     border: none;
     cursor: pointer;
-    color: #494949;
+    color: #7482ec;
     
 }
 i {
@@ -94,9 +100,9 @@ i {
 .header .btn button{
     margin-left: 20px;
     font-weight: 700;
-    color: #494949;
+    color: #7482ec;
     padding: 9px 25px;
-    background: #cfcfcf;
+    background: transparent;
     border: none;
     border-radius: 13px;
     cursor: pointer;
@@ -104,7 +110,7 @@ i {
 }
 
 .header .btn button:hover{
-    color: #494949;
+    color: #d1d1d1;
     transform: scale(1.1);
 }
 .menu {
@@ -133,7 +139,7 @@ i {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgba(231, 231, 231, .88);
+    background-color: rgba(243, 218, 255, 0.959);
     overflow: hidden;
     transition: all 0.3s ease 0s;
 }
@@ -152,12 +158,12 @@ i {
     display: block;
     transition: all 0.3s ease 0s;
     font-weight: 700;
-    color: #494949;
+    color: #7482ec;
 }
 
 .header .overlay a:hover, 
 .header .overlay a:focus{
-    color: #fff;
+    color: #d1d1d1;
 }
 
 .header .overlay .close{
@@ -190,7 +196,7 @@ i {
 .carusel-section {
     display: flex;
     justify-content: center;
-    background-color: #ececec;
+    background: -webkit-linear-gradient(90deg, #fecdea,#d7dffe);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #fecdea,#d7dffe);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
 }
 .carusel-section-cards{
     width: 100%;
@@ -220,10 +226,10 @@ i {
     font-weight: 900;
     line-height: 1;
     margin-bottom: 2rem;
-    color: #494949;
+    color: #7482ec;
 }
 .section__card-text {
-    font-weight: 500;
+    font-weight: 800;
     font-size: 1.1rem;
     color: #000;
 }
@@ -249,7 +255,7 @@ i {
     flex-direction: column-reverse;
 }
 .prev, .next {
-    color: #000;
+    color: #7482ec;
     background-color:transparent;
     font-size: 1rem;
     margin: 0.2rem 0.2rem 0.2rem 0.2rem ;
@@ -258,7 +264,7 @@ i {
     transition: 0.3s;
 }
 .prev:hover, .next:hover{
-    color: #000;
+    color: #d1d1d1;
     transform: scale(1.1);
 }
 
@@ -328,6 +334,7 @@ h5 {
     font-weight: 900;
     padding-top: 240px;
     padding-bottom: 100px;
+    color: #7482ec;
 }
 .imgs-home {
     display: flex;
@@ -344,6 +351,7 @@ h5 {
     transition: 400ms;
     box-shadow: 4px 7px 7px 0 #858585;
 }
+
 
 .imgs-home img:hover {
     transform: scale(1.03);
@@ -387,7 +395,7 @@ h5 {
     }
 }
 
-/*about me*/
+/*about me
 .services-section {
     margin-top: 90px;
     display: flex;
@@ -477,7 +485,7 @@ h5 {
         max-width: 100%;
         margin: 1rem;
     }
-}
+}*/
 
 /*animation*/
 @keyframes show {
@@ -508,13 +516,14 @@ img {
 .footer {
     position: relative;
     width: 100%;
-    background: #e8e8e8;
+    background: -webkit-linear-gradient(90deg, #fecdea,#d7dffe);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(90deg, #fecdea,#d7dffe);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
     min-height: 100px;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 40px;
   }
   
   .social-icon {
@@ -531,7 +540,7 @@ img {
   }
   
   .icon {
-    color: #282828;
+    color: #7482ec;
     font-size: 32px;
     display: inline-block;
     margin: 0 10px;
@@ -555,21 +564,20 @@ img {
     list-style: none;
   }
   .menu-icon {
-    color: #282828;
+    color: #7482ec;
     font-size: 20px;
     display: inline-block;
     text-decoration: none;
     margin: 5px 10px;
-    opacity: 0.5;
     transition: 0.3s;
   }
   
   .menu-icon:hover {
-    opacity: 1;
+    color: #d1d1d1;
   }
   
   .text {
-    color: #474747;
+    color: #7482ec;
     text-align: center;
     margin-top: 15px;
     margin-bottom: 10px;
